@@ -5,11 +5,11 @@ public class Money {
     protected int amount;
     protected String currency;
 
-    public static Money dollar(int amount){
+    public static Money dollar(int amount) {
         return new Money(amount, "USD");
     }
 
-    public static Money won(int amount){
+    public static Money won(int amount) {
         return new Money(amount, "WON");
     }
 
@@ -36,5 +36,9 @@ public class Money {
     @Override
     public int hashCode() {
         return amount;
+    }
+
+    public Money reduce(String to) {
+        return this;
     }
 }
