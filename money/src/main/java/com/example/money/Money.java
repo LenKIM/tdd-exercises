@@ -5,12 +5,12 @@ public class Money {
     protected int amount;
     protected String currency;
 
-    public static Dollar dollar(int amount){
-        return new Dollar(amount, "USD");
+    public static Money dollar(int amount){
+        return new Money(amount, "USD");
     }
 
-    public static Won won(int amount){
-        return new Won(amount, "WON");
+    public static Money won(int amount){
+        return new Money(amount, "WON");
     }
 
     public Money(int amount, String currency) {

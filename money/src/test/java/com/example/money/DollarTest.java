@@ -9,7 +9,7 @@ public class DollarTest {
 
     @Test
     void testMultiplication() {
-        Dollar five = Money.dollar(5);
+        Money five = Money.dollar(5);
 
         assertEquals(Money.dollar(10), five.times(2));
         assertEquals(Money.dollar(15), five.times(3));
@@ -18,7 +18,7 @@ public class DollarTest {
 
     @Test
     void testWonMultiplication() {
-        Won five = Money.won(5);
+        Money five = Money.won(5);
 
         assertEquals(Money.won(10), five.times(2));
         assertEquals(Money.won(15), five.times(3));
