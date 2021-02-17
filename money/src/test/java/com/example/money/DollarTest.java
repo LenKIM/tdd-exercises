@@ -49,4 +49,12 @@ public class DollarTest {
         Money reduced = bank.reduced(sum, "USD");
         assertEquals(Money.dollar(10), reduced);
     }
+
+    @Test
+    void reduceMoneyDifferentCurrency() {
+        Bank bank = new Bank();
+        bank.addRate("WON", "USD", 2);
+        Money result = bank.reduced(Money.won(2), "USD");
+        assertEquals(Money.dollar(1), result);
+    }
 }

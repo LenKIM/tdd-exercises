@@ -1,6 +1,6 @@
 package com.example.money;
 
-public class Money {
+public class Money implements Expression{
 
     protected int amount;
     protected String currency;
@@ -38,7 +38,8 @@ public class Money {
         return amount;
     }
 
-    public Money reduce(String to) {
-        return this;
+    public Money reduce(Bank bank, String to) {
+        int rate = bank.rate(currency,to);
+        return new Money(amount/rate, to);
     }
 }
