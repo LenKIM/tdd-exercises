@@ -9,10 +9,30 @@ public class DollarTest {
 
     @Test
     void testMultiplication() {
-        Dollar five = new Dollar(5);
+        Dollar five = Money.dollar(5);
 
-        assertEquals(new Dollar(10), five.times(2));
-        assertEquals(new Dollar(15), five.times(3));
+        assertEquals(Money.dollar(10), five.times(2));
+        assertEquals(Money.dollar(15), five.times(3));
 
     }
+
+    @Test
+    void testWonMultiplication() {
+        Won five = Money.won(5);
+
+        assertEquals(Money.won(10), five.times(2));
+        assertEquals(Money.won(15), five.times(3));
+
+    }
+
+    @Test
+    void equality() {
+        assertTrue(Money.dollar(5).equals(Money.dollar(5)));
+        assertFalse(Money.dollar(5).equals(Money.dollar(6)));
+        assertTrue(Money.won(5).equals(Money.won(5)));
+        assertFalse(Money.won(5).equals(Money.won(6)));
+
+        assertFalse(Money.dollar(5).equals(Money.won(5)));
+    }
+
 }

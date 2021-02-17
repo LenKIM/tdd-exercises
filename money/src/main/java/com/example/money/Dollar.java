@@ -1,33 +1,12 @@
 package com.example.money;
 
-public class Dollar {
+public class Dollar extends Money {
 
-    private int amount;
-
-    public Dollar(int amount) {
-        this.amount = amount;
-    }
-
-    public Dollar times(int factor) {
-        return new Dollar(this.amount * factor);
+    public Dollar(int amount, String usd) {
+        super(amount,usd);
     }
 
     public int getAmount() {
-        return amount;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Dollar)) return false;
-
-        Dollar dollar = (Dollar) o;
-
-        return amount == dollar.amount;
-    }
-
-    @Override
-    public int hashCode() {
         return amount;
     }
 }
