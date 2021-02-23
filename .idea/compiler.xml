@@ -3,6 +3,8 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="Calculater" target="11" />
+      <module name="Calculater.main" target="11" />
+      <module name="Calculater.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

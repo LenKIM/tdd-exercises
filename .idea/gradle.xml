@@ -7,23 +7,21 @@
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Calculater" />
-        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/calculater" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="delegatedBuild" value="false" />
-        <option name="testRunner" value="PLATFORM" />
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/money" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/money" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/xunit" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/xunit" />
           </set>
         </option>
       </GradleProjectSettings>

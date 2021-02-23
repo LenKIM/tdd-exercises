@@ -27,8 +27,9 @@
     <option name="excludeFilter" value="" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/calculater" />
+    <file type="web" url="file://$PROJECT_DIR$/Calculater" />
     <file type="web" url="file://$PROJECT_DIR$/money" />
+    <file type="web" url="file://$PROJECT_DIR$/xunit" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
