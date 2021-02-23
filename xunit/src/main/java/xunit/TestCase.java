@@ -11,6 +11,8 @@ public class TestCase {
     }
 
     public void run() {
+        setUp();
+
         try {
             Method method = getClass().getMethod(name);
             method.invoke(this);
@@ -19,5 +21,9 @@ public class TestCase {
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    public void setUp() {
+
     }
 }

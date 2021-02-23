@@ -9,5 +9,6 @@ public class XUnitTest {
 //        System.out.println(wasRun.wasRun); // true
 
         new TestCaseTest("testRunning").run();
+        new TestCaseTest("testSetUp").run();
     }
 }
