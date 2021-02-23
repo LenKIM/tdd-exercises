@@ -8,8 +8,9 @@ public class TestCaseTest extends TestCase {
 
     public void testRunning(){
         WasRun wasRun = new WasRun("testMethod");
-        System.out.println(wasRun.wasRun);
+
+        Assert.assertEqauls(false, wasRun.wasRun);
         wasRun.run();
-        System.out.println(wasRun.wasRun);
+        Assert.assertEqauls(true, wasRun.wasRun);
     }
 }
