@@ -7,8 +7,16 @@ public class XUnitTest {
 //        System.out.println(wasRun.wasRun); // false
 //        wasRun.run();
 //        System.out.println(wasRun.wasRun); // true
+        TestSuite suite = new TestSuite();
+        suite.add(new TestCaseTest("testTemplateMethod"));
+        suite.add(new TestCaseTest("testResult"));
+        suite.add(new TestCaseTest("testFailedResultFormatting"));
+        suite.add(new TestCaseTest("testFailedResult"));
+        TestResult result = new TestResult();
 
-        new TestCaseTest("testRunning").run();
-        new TestCaseTest("testSetUp").run();
+        suite.run(result);
+        System.out.println(result.getSummary());
+
+//        new TestCaseTest("testSetUp").run();
     }
 }
