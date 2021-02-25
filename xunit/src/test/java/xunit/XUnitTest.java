@@ -3,8 +3,7 @@ package xunit;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class XUnitTest {
 
@@ -16,32 +15,11 @@ public class XUnitTest {
     }
 
     @Test
-    public void createAndRun_testMethod() {
-        assertFalse(wasRun.isRun);
+    public void templateTestMethod() {
+        assertEquals(wasRun.log, "");
         wasRun.run();
-        assertTrue(wasRun.isRun);
+        assertEquals(wasRun.log, "setUp testMethod tearDown");
     }
-
-    @Test
-    void setUpMethod() {
-        assertFalse(wasRun.wasSetUp);
-        assertFalse(wasRun.isRun);
-        wasRun.run();
-        assertTrue(wasRun.isRun);
-        assertTrue(wasRun.wasSetUp);
-    }
-
-    @Test
-    void tearDownMethod() {
-        assertFalse(wasRun.tearDown);
-        assertFalse(wasRun.wasSetUp);
-        assertFalse(wasRun.isRun);
-        wasRun.run();
-        assertTrue(wasRun.isRun);
-        assertTrue(wasRun.wasSetUp);
-        assertTrue(wasRun.tearDown);
-    }
-
 
 
 }
