@@ -17,21 +17,25 @@ public class XUnitTest {
     @Test
     public void templateTestMethod() {
         assertEquals(wasRun.log, "");
-        wasRun.run();
+
+        TestResult result = new TestResult();
+        wasRun.run(result);
         assertEquals(wasRun.log, "setUp testMethod tearDown");
     }
 
     @Test
     void exceptionTest() {
         wasRun = new WasRun("testMethodWithException");
-        wasRun.run();
+        TestResult result = new TestResult();
+        wasRun.run(result);
         assertEquals(wasRun.log, "setUp testMethod tearDown");
     }
 
     @Test
     void testResult() {
         wasRun = new WasRun("testMethod");
-        TestResult result = wasRun.run();
+        TestResult result = new TestResult();
+        wasRun.run(result);
         assertEquals("1 run, 0 failed", result.getSummary());
     }
 
@@ -46,7 +50,20 @@ public class XUnitTest {
     @Test
     void testResult_With_failRun()  {
         wasRun = new WasRun("testMethodWithException");
-        TestResult result = wasRun.run();
+        TestResult result = new TestResult();
+        wasRun.run(result);
         assertEquals("1 run, 1 failed", result.getSummary());
+    }
+
+    @Test
+    void testSuite_multiple()  {
+        TestSuite testSuite = new TestSuite();
+        testSuite.add(new WasRun("testMethodWithException"));
+        testSuite.add(new WasRun("testMethod"));
+        testSuite.add(new WasRun("testMethod"));
+        testSuite.add(new WasRun("testMethod"));
+
+        TestResult result = testSuite.run();
+        assertEquals("4 run, 1 failed", result.getSummary());
     }
 }

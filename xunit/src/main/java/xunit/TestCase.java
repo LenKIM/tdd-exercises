@@ -9,8 +9,7 @@ public class TestCase {
         this.name = name;
     }
 
-    public TestResult run() {
-        TestResult result = new TestResult();
+    public TestResult run(TestResult result) {
         result.testStarted();
 
         setUp();
