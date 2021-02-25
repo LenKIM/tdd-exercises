@@ -11,6 +11,12 @@ public class WasRun extends TestCase {
     public void testMethod() {
         log += " testMethod";
     }
+
+    public void testMethodWithException() throws Exception {
+        log += " testMethod";
+        throw new Exception();
+    }
+
     @Override
     public void setUp(){
         log = "setUp";

@@ -15,11 +15,11 @@ public class TestCase {
         try {
             Method method = getClass().getMethod(name);
             method.invoke(this);
-        } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-            e.printStackTrace();
+        } catch (Exception ignored) {
         }
         tearDown();
     }
+
     protected void tearDown() {
 
     }
