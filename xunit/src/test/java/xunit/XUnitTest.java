@@ -62,8 +62,23 @@ public class XUnitTest {
         testSuite.add(new WasRun("testMethod"));
         testSuite.add(new WasRun("testMethod"));
         testSuite.add(new WasRun("testMethod"));
-
-        TestResult result = testSuite.run();
+        TestResult result = new TestResult();
+        testSuite.run(result);
         assertEquals("4 run, 1 failed", result.getSummary());
+    }
+
+    @Test
+    void testSuite_multiple_static_ver()  {
+        TestSuite testSuite2 = new TestSuite();
+
+        TestSuite testSuite = WasRun.suite();
+
+        TestResult result = new TestResult();
+
+        testSuite2.add(new WasRun("testMethod"));
+        testSuite2.add(testSuite);
+
+        testSuite2.run(result);
+        assertEquals("5 run, 1 failed", result.getSummary());
     }
 }

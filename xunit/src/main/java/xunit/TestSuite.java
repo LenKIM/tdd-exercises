@@ -3,19 +3,17 @@ package xunit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestSuite {
+public class TestSuite implements Test {
 
-    List<WasRun> tests = new ArrayList<>();
+    List<Test> tests = new ArrayList<>();
 
-    public void add(WasRun test) {
+    public void add(Test test) {
         tests.add(test);
     }
 
-    public TestResult run(){
-        TestResult result = new TestResult();
+    public void run(TestResult result){
         tests.forEach(t -> {
             t.run(result);
         });
-        return result;
     }
 }
