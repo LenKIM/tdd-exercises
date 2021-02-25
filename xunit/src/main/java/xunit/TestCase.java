@@ -18,6 +18,10 @@ public class TestCase {
         } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
             e.printStackTrace();
         }
+        tearDown();
+    }
+    protected void tearDown() {
+
     }
 
     protected void setUp() {

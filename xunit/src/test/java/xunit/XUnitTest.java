@@ -23,13 +23,25 @@ public class XUnitTest {
     }
 
     @Test
-    void createAndRun_setUpMethod() {
+    void setUpMethod() {
         assertFalse(wasRun.wasSetUp);
         assertFalse(wasRun.isRun);
         wasRun.run();
         assertTrue(wasRun.isRun);
         assertTrue(wasRun.wasSetUp);
     }
+
+    @Test
+    void tearDownMethod() {
+        assertFalse(wasRun.tearDown);
+        assertFalse(wasRun.wasSetUp);
+        assertFalse(wasRun.isRun);
+        wasRun.run();
+        assertTrue(wasRun.isRun);
+        assertTrue(wasRun.wasSetUp);
+        assertTrue(wasRun.tearDown);
+    }
+
 
 
 }
