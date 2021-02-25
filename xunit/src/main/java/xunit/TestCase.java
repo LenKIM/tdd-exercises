@@ -11,11 +11,16 @@ public class TestCase {
     }
 
     public void run() {
+        setUp();
         try {
             Method method = getClass().getMethod(name);
             method.invoke(this);
         } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    protected void setUp() {
+
     }
 }
