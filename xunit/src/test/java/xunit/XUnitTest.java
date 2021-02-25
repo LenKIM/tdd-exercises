@@ -81,4 +81,16 @@ public class XUnitTest {
         testSuite2.run(result);
         assertEquals("5 run, 1 failed", result.getSummary());
     }
+
+    @Test
+    void 소문자로시작하는_testXX_만_동작() {
+        TestSuite testSuite = new TestSuite();
+        testSuite.add(new WasRun("testMethodWithException"));
+        testSuite.add(new WasRun("testMethod"));
+        testSuite.add(new WasRun("testMethod"));
+        testSuite.add(new WasRun("testMethod"));
+        TestResult rs = new TestResult();
+        testSuite.run(rs);
+        assertEquals("5 run, 1 failed", rs.getSummary());
+    }
 }
