@@ -1,6 +1,5 @@
 package xunit;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class TestCase {
@@ -10,14 +9,20 @@ public class TestCase {
         this.name = name;
     }
 
-    public void run() {
+    public TestResult run() {
+        TestResult result = new TestResult();
+        result.testStarted();
+
         setUp();
         try {
             Method method = getClass().getMethod(name);
             method.invoke(this);
         } catch (Exception ignored) {
+            result.testFailed();
         }
         tearDown();
+
+        return result;
     }
 
     protected void tearDown() {

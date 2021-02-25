@@ -2,12 +2,8 @@ package xunit;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.*;
-import static org.mockito.MockitoAnnotations.initMocks;
 
 public class XUnitTest {
 
@@ -32,6 +28,25 @@ public class XUnitTest {
         assertEquals(wasRun.log, "setUp testMethod tearDown");
     }
 
+    @Test
+    void testResult() {
+        wasRun = new WasRun("testMethod");
+        TestResult result = wasRun.run();
+        assertEquals("1 run, 0 failed", result.getSummary());
+    }
 
+    @Test
+    void testResult_formatting_test() {
+        TestResult testResult = new TestResult();
+        testResult.testStarted();
+        testResult.testFailed();
+        assertEquals("1 run, 1 failed", testResult.getSummary());
+    }
 
+    @Test
+    void testResult_With_failRun()  {
+        wasRun = new WasRun("testMethodWithException");
+        TestResult result = wasRun.run();
+        assertEquals("1 run, 1 failed", result.getSummary());
+    }
 }
