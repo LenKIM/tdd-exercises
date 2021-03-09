@@ -49,13 +49,13 @@ public class AccountTest {
 
 
 
-이제
+
 
 ### 응답
 
 계좌 생성 메서드 생성
 
-![image-20210309130157408](/Users/len/Library/Application Support/typora-user-images/image-20210309130157408.png)
+![image-20210309130157408](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7l5ozlj31y40d041n.jpg)
 
 
 
@@ -189,13 +189,13 @@ public class Account {
 }
 ```
 
-![image-20210309140701442](/Users/len/Library/Application Support/typora-user-images/image-20210309140701442.png)
+![image-20210309140701442](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7fbw2mj30lv0610t4.jpg)
 
 예제에서는 JUnit4로 테스트 프레임워크로 만들었지만, 나는 처음부터 사용해서 수정할 만한 내용이 없음.
 
 
 
-![image-20210309140938000](/Users/len/Library/Application Support/typora-user-images/image-20210309140938000.png)
+![image-20210309140938000](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7ckqblj30lp08dmy7.jpg)
 
 역시나 테스트 코드부터 만들자.
 
@@ -243,7 +243,7 @@ public class Account {
 
 
 
-![image-20210309141614660](/Users/len/Library/Application Support/typora-user-images/image-20210309141614660.png)
+![image-20210309141614660](https://tva1.sinaimg.cn/large/008eGmZEgy1godm78x89yj30lf092wez.jpg)
 
 
 
