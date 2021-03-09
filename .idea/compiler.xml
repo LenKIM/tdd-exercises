@@ -2,9 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Account" target="11" />
+      <module name="Account.main" target="11" />
+      <module name="Account.test" target="11" />
       <module name="Calculater" target="11" />
       <module name="Calculater.main" target="11" />
       <module name="Calculater.test" target="11" />
+      <module name="tdd-exerses.main" target="11" />
+      <module name="tdd-exerses.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
