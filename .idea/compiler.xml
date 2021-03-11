@@ -3,8 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="Account" target="11" />
+      <module name="account.main" target="11" />
       <module name="Account.main" target="11" />
-      <module name="Account.test" target="11" />
+      <module name="account.test" target="11" />
       <module name="Calculater" target="11" />
       <module name="Calculater.main" target="11" />
       <module name="Calculater.test" target="11" />

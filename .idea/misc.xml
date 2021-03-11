@@ -28,8 +28,8 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/account" />
-    <file type="web" url="file://$PROJECT_DIR$/account" />
     <file type="web" url="file://$PROJECT_DIR$/Calculater" />
+    <file type="web" url="file://$PROJECT_DIR$/mock-study" />
     <file type="web" url="file://$PROJECT_DIR$/money" />
     <file type="web" url="file://$PROJECT_DIR$/xunit" />
   </component>
