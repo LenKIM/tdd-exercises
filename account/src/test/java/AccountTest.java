@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class AccountTest {
-    
+
     private Account account;
 
     public AccountTest() {
