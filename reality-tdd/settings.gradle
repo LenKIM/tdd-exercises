@@ -1,0 +1,4 @@
+rootProject.name = 'reality-tdd'
+include 'console-app'
+include 'console-app-model'
+
