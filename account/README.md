@@ -13,7 +13,7 @@
 "질문"
 1. 작성하고자 하는 메서드나 기능이 무엇인지 선별하고 작성 완료 조건을 정해서 실패하는 테스트 케이스를 작성하는 것
 
-![image-20210309105258601](https://tva1.sinaimg.cn/large/008eGmZEgy1godf181ovvj30fc07xjrv.jpg)
+![image-20210309105258601](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godf181ovvj30fc07xjrv.jpg)
 
 ```java
 public class AccountTest {
@@ -55,7 +55,7 @@ public class AccountTest {
 
 계좌 생성 메서드 생성
 
-![image-20210309130157408](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7l5ozlj31y40d041n.jpg)
+![image-20210309130157408](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godm7l5ozlj31y40d041n.jpg)
 
 
 
@@ -88,7 +88,7 @@ public class AccountTest {
 
 남았음.
 
-![image-20210309135100289](https://tva1.sinaimg.cn/large/008eGmZEgy1godk6bzam8j30lv06eq3i.jpg)
+![image-20210309135100289](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godk6bzam8j30lv06eq3i.jpg)
 
 ```java
 public class AccountTest {
@@ -126,7 +126,7 @@ public class AccountTest {
 
 
 
-![image-20210309135932043](https://tva1.sinaimg.cn/large/008eGmZEgy1godkf8ceisj30ll063aal.jpg)
+![image-20210309135932043](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godkf8ceisj30ll063aal.jpg)
 
 일단 실패하니까, 성공 케이스를 하드코딩으로 넣자.
 
@@ -144,7 +144,7 @@ public class Account {
 }
 ```
 
- **테스트 케이스를 엉성하게 만들면 테스트 자체를 신뢰할 수 없게 된다.**
+**테스트 케이스를 엉성하게 만들면 테스트 자체를 신뢰할 수 없게 된다.**
 
 그러므로, 테스트 케이스를 통한 제품 코드 구현을 하드 코딩으로 시작하는 것도 괜찮은 출발점이라 할 수 있다.
 
@@ -189,13 +189,13 @@ public class Account {
 }
 ```
 
-![image-20210309140701442](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7fbw2mj30lv0610t4.jpg)
+![image-20210309140701442](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godm7fbw2mj30lv0610t4.jpg)
 
 예제에서는 JUnit4로 테스트 프레임워크로 만들었지만, 나는 처음부터 사용해서 수정할 만한 내용이 없음.
 
 
 
-![image-20210309140938000](https://tva1.sinaimg.cn/large/008eGmZEgy1godm7ckqblj30lp08dmy7.jpg)
+![image-20210309140938000](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godm7ckqblj30lp08dmy7.jpg)
 
 역시나 테스트 코드부터 만들자.
 
@@ -239,11 +239,11 @@ public class Account {
 
 ```
 
-![image-20210309141530713](https://tva1.sinaimg.cn/large/008eGmZEgy1godkw3iblvj32r00nq7b6.jpg)
+![image-20210309141530713](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godkw3iblvj32r00nq7b6.jpg)
 
 
 
-![image-20210309141614660](https://tva1.sinaimg.cn/large/008eGmZEgy1godm78x89yj30lf092wez.jpg)
+![image-20210309141614660](https://tva1.sinaimg.cn/mw1024/008eGmZEgy1godm78x89yj30lf092wez.jpg)
 
 
 
@@ -329,4 +329,3 @@ public class AccountTest {
     }
 }
 ```
-

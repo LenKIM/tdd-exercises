@@ -3,14 +3,15 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="Account" target="11" />
-      <module name="account.main" target="11" />
       <module name="Account.main" target="11" />
-      <module name="account.test" target="11" />
       <module name="Calculater" target="11" />
       <module name="Calculater.main" target="11" />
       <module name="Calculater.test" target="11" />
       <module name="tdd-exerses.main" target="11" />
       <module name="tdd-exerses.test" target="11" />
+      <module name="vendingMachine" target="11" />
+      <module name="vendingMachine.main" target="11" />
+      <module name="vendingMachine.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -37,6 +37,38 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/reality-tdd" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/reality-tdd" />
+            <option value="$PROJECT_DIR$/reality-tdd/console-app" />
+            <option value="$PROJECT_DIR$/reality-tdd/console-app-model" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/vending-machine" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/vending-machine" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/videoshop" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/videoshop" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/xunit" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/6.5.1/libexec" />
         <option name="modules">
