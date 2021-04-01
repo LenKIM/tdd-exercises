@@ -1,49 +1,40 @@
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
 
-    private Account account;
+    Account account;
 
-    public AccountTest() {
-    }
-
-    @Test
-    void account_create() throws Exception {
+    @BeforeEach
+    void setUp() {
         account = new Account(10000);
-        Assertions.assertNotNull(account);
     }
 
     @Test
-    void get_balance() throws Exception {
-        account = new Account(10000);
-        if (account.getBalance() != 10000) {
-            Assertions.fail("Error");
-        }
+    void 잔고조회() {
+        account = new Account(-1);
+        assertEquals(account.getBalance(), 10000);
 
-        account = new Account(1000);
-        if (account.getBalance() != 1000) {
-            Assertions.fail("Error");
-        }
+        Account account2 = new Account(20000);
+        assertEquals(account2.getBalance(), 20000);
 
-        account = new Account(0);
-        if (account.getBalance() != 0) {
-            Assertions.fail("Error");
-        }
-
+        Account account3 = new Account(1000);
+        assertEquals(account3.getBalance(), 1000);
     }
 
     @Test
-    void deposit() {
+    void 입금() {
         account = new Account(10000);
         account.deposit(1000);
-        Assertions.assertEquals(11000, account.getBalance());
+        assertEquals(account.getBalance(), 11000);
     }
 
     @Test
-    void withdraw() {
+    void 출금() {
         account = new Account(10000);
         account.withdraw(1000);
-        Assertions.assertEquals(9000, account.getBalance());
+        assertEquals(account.getBalance(), 9000);
     }
 }
